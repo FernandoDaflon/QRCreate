@@ -10,13 +10,11 @@ qr = qrcode.QRCode(
     border=9
 )
 
-data = 'Cruzeiro ou Ceara?'
+data = 'client: Client01' \
+       'Job: 35469 564864 123 2020' \
+       'hub: world cargo logistics' \
+       'route: T-Bromstadvegen59Trondheim7047-Tvetenveien32Oslo0666 '
 
-# data = 'client: OOGTK-LIBRA' \
-#        'Job: 35469 564864 123 2020' \
-#        'hub: world cargo logistics'
-
-# data = 'T-Bromstadvegen59Trondheim7047-Tvetenveien32Oslo0666 '
 
 qr.add_data(data)
 qr.make(fit=True)
